@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<link href="{{ asset('css/style_menu.css') }}" type="text/css" rel="stylesheet">
+    <h3 onclick="document.getElementsByTagName('nav')[0].className = 'menu menu_active'">&lt;menu/&gt;</h3>
+<nav class="menu">
+  <p onclick="document.getElementsByTagName('nav')[0].className = 'menu'">&lt;close/&gt;</p>
+  <ol>
+    <li class="menu-item"><a href="#0">Menu</a></li>
+    <li class="menu-item"><a href="#0">Accueil</a></li>
+    <li class="menu-item"><a href="#0">A Propos</a></li>
+    <li class="menu-item"><a href="#0">Mes Compétences</a></li>
+    <li class="menu-item">
+      <a href="#0"></a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="#0">Langages</a></li>
+        <li class="menu-item"><a href="#0">Applications/Logiciels</a></li>
+      </ol>
+    </li>
+    <li class="menu-item">
+      <a href="#0">Mes Projets</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="#0">Mes Stages</a></li>
+        <li class="menu-item"><a href="#0">Projets en cours de Formation</a></li>
+        <li class="menu-item"><a href="#0">Projets Personnels</a></li>
+      </ol>
+    </li>
+    <li class="menu-item"><a href="#0">Curriculum Vitae</a></li>
+    <li class="menu-item"><a href="#0">Contact</a></li>
+  </ol>
+</nav>
+{% endblock %}

@@ -1,8 +1,30 @@
 
 home:
-    path: /
+    path: /home
     controller: App\Controller\HomeController::index
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-  
+about:
+    path: /about
+    controller: App\Controller\HomeController::about
+
+skills:
+    path: /skills
+    controller: App\Controller\HomeController::skills
+
+
+projects:
+    path: /projects
+    controller: App\Controller\HomeController::projects
+
+
+cv:
+    path: /cv
+    controller: App\Controller\HomeController::cv
+
+
+contact:
+    path: /contact
+    controller: App\Controller\HomeController::contact
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}A propos{% endblock %}</title>
+    
+       
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       
+        {% block stylesheets %}
+     
+        {% endblock %}
+
+        
+    </head>
+    <body>
+
+
+{% block body %}
+<link href="{{ asset('css/style_base_menu.css') }}" type="text/css" rel="stylesheet">
+
+ <div class="panel">
+    <div class="panel-default"></div>
+   
+  </div>
+  <nav class="black">
+    <div class="underline"></div>
+    <div class="underline"></div>
+    <div class="underline"></div>
+    <a href="{{ path('home')}}" onClick="ul(0)" >Accueil</a><a href="{{ path('about')}}" onClick="ul(1)">A Propos</a><a href="{{ path('skills')}}" onClick="ul(2)">Compétences</a><a href="{{ path('projects')}}" onClick="ul(3)">Projets</a><a href="{{ path('cv')}}" onClick="ul(4)">CV</a><a href="{{ path('contact')}}" onClick="ul(5)">Contact</a>
+  </nav>    
+<script src="{{ asset('js/script_base_menu.js') }}"></script>
+
+{% endblock %}
+
+</body>
+
+</html>

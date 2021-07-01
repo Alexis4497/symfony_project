@@ -18,18 +18,150 @@
 
 {% block body %}
 <link href="{{ asset('css/style_base_menu.css') }}" type="text/css" rel="stylesheet">
+<link href="{{ asset('css/skills.css') }}" type="text/css" rel="stylesheet">
 
- <div class="panel">
-    <div class="panel-default"></div>
-   
-  </div>
-  <nav class="black">
-    <div class="underline"></div>
-    <div class="underline"></div>
-    <div class="underline"></div>
-    <a href="{{ path('home')}}" onClick="ul(0)" >Accueil</a><a href="{{ path('about')}}" onClick="ul(1)">A Propos</a><a href="{{ path('skills')}}" class="active" onClick="ul(2)">Compétences</a><a href="{{ path('projects')}}" onClick="ul(3)">Projets</a><a href="{{ path('cv')}}" onClick="ul(4)">CV</a><a href="{{ path('contact')}}" onClick="ul(5)">Contact</a>
-  </nav>    
-<script src="{{ asset('js/script_base_menu.js') }}"></script>
+    <div class="panel">
+        <div class="panel-default"></div>
+      
+      </div>
+      <nav class="black">
+        <div class="underline"></div>
+        <div class="underline"></div>
+        <div class="underline"></div>
+        <a href="{{ path('home')}}" onClick="ul(0)" >Accueil</a><a href="{{ path('about')}}" onClick="ul(1)">A Propos</a><a href="{{ path('skills')}}" class="active" onClick="ul(2)">Compétences</a><a href="{{ path('projects')}}" onClick="ul(3)">Projets</a><a href="{{ path('cv')}}" onClick="ul(4)">CV</a><a href="{{ path('contact')}}" onClick="ul(5)">Contact</a>
+      </nav>    
+    <script src="{{ asset('js/script_base_menu.js') }}"></script>
+
+
+    <div class="content">
+
+      <div class="content-left">
+
+        <h1>  Langages </h1>
+  <section id="competences">
+                    
+                   
+                    <div>
+
+                        <div class="bar">
+                            <img class="img-bar" src="media/html.png" alt="html-icon"> 
+                            <img class="img-bar" src="media/css.png" alt="css-icon"> 
+                            
+                        </div>
+
+                    
+
+                        <div class="progress">
+                            <div class="progress-bar" 
+                            role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-value-max="100"
+                            style="width: 80%; background-color: cyan"> 80%</div>
+                        </div>
+
+                        <div class="bar">
+                            <img class="img-bar" src="media/js.png" alt="js-icon"> 
+                            <img class="img-bar" src="media/ajax.png" alt="ajax-icon"> 
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" 
+                            role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-value-max="100"
+                            style="width: 60%; background-color: cyan"> 60%</div>
+                        </div>
+
+
+                        <div class="bar">
+                            <img class="img-bar" src="media/csharp.png" alt="csharp-icon"> 
+                             <img class="img-bar" src="media/java.png" alt="java-icon"> 
+
+                            
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" 
+                            role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-value-max="100"
+                            style="width: 70%; background-color: cyan"> 70%</div>
+                        </div>
+
+
+                        <div class="bar">
+                            <img class="img-bar" src="media/php.png" alt="php-icon"> 
+                            <img class="img-bar" src="media/sql.png" alt="sql-icon">
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" 
+                            role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-value-max="100"
+                            style="width: 75%; background-color: cyan"> 75%</div>
+                        </div>
+
+
+                        <div class="bar">
+                            
+                            <img class="img-bar" src="media/bootstrap.png" alt="bootstrap-icon">
+                            <img class="img-bar" src="media/symfony.png" alt="symfony-icon"> 
+                            
+                            
+                            
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" 
+                            role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-value-max="100"
+                            style="width: 80%; background-color: cyan"> 80%</div>
+                        </div>
+
+
+                        <div class="bar">
+                            <img class="img-bar" src="media/nodejs.png" alt="nodeJS-icon"> 
+                            <img class="img-bar" src="media/sass.png" alt="sass-icon"> 
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" 
+                            role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-value-max="100"
+                            style="width: 50%; background-color: cyan"> 50%</div> 
+                        </div>
+                        
+                           <div class="bar">
+                           <img class="img-bar" src="media/wordpress.png" alt="wordpress-icon">
+                            <img class="img-bar" src="media/drupal.png" alt="drupal-icon"> 
+                            
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" 
+                            role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-value-max="100"
+                            style="width: 50%; background-color: cyan"> 80%</div> 
+                        </div>
+                        
+                        
+                        
+                        </br>
+                    </div>
+                </section>
+          
+
+
+      </div>
+
+      <div class="content-right">
+
+        <h1> Logiciels/Applications </h1>
+          <div class="icones-comp">
+            <img class="img-comp" src="media/atom.png" alt="atom-icon">
+            <img class="img-comp" src="media/vscode.png" alt="vscode-icon">
+            <img class="img-comp" src="media/photoshop.png" alt="photoshop-icon">
+            <img class="img-comp" src="media/github.png" alt="giithub-icon">
+
+
+          </div>
+      </div>
+    </div>
+
+
+
+
+
 
 {% endblock %}
 

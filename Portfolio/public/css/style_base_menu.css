@@ -58,6 +58,7 @@
   }
   
   a {
+    text-decoration: none;
     display: inline-block;
     z-index: 10;
     width: 10%;

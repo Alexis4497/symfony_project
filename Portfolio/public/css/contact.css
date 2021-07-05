@@ -1,0 +1,120 @@
+/*
+Couleur jaune : #efc371
+Hover #dd925f
+Couleur violette : #ae94c0
+couleur gris clair : #302F2F
+couleur gris foncé: #1d1f20
+*/
+h1{
+    
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    color: #ae94c0;
+    margin-left:20px;
+    margin-top: 20px;
+
+}
+
+.content-left{
+    position:relative;
+    float:left;
+    height: 800px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: whitesmoke solid 1px;
+    border-radius: 6%;
+    box-shadow: 8px 8px 8px #302F2F ;
+    margin-left: 10px;
+
+}
+
+.content-left a{
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 30%;
+    font-family: "Space Mono", monospace;
+    color: #efc371;
+    margin-top: 25px;
+}
+
+.content-right{
+    position: relative;
+    float: right;
+    height: 800px;
+    width: 1250px;
+    border: whitesmoke solid 1px;
+    border-radius: 3%;
+    box-shadow: 8px 8px 8px #302F2F ;
+    margin-right: 20px;
+  }
+
+
+/**********************Formulaire de contact **********************************/
+
+.form-container {
+    padding-top: 80px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    
+  }
+  #reused_form {
+    position: relative;
+    margin: 0px auto;
+  }
+  input {
+    font-size: 0.85em;
+    width: 570px;
+    height: 60px;
+    padding: 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 1px #b3aca7;
+    border-bottom:none;
+  }
+  textarea {
+    width: 570px;
+    height: 250px;
+    max-height: 250px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 1px #b3aca7;
+    resize: none !important;
+  }
+  input::placeholder, textarea::placeholder, input:focus::placeholder, textarea:focus::placeholder {
+    color: #aca49c;
+  }
+  input:hover::placeholder, textarea:hover::placeholder, input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #e2dedb;
+  }
+  .form-button {
+    background: transparent;
+    border: solid 1px #b3aca7;
+    padding: 20px 75px;
+    margin: 14px 0 -20px 0;
+    color: whitesmoke;
+  }
+  .form-container h4 {
+    font-size: 2em;
+  }
+  #error_message {
+    color: red;
+    border: 1px solid red;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px 15px 8px 15px;
+    box-shadow: 0 0 5px red;
+  }
+  #success_message {
+    color: green;
+    border: 1px solid green;
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 50px;
+    box-shadow: 0 0 5px green;
+  }
+

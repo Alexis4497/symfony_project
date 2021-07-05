@@ -18,6 +18,7 @@
 
 {% block body %}
 <link href="{{ asset('css/style_base_menu.css') }}" type="text/css" rel="stylesheet">
+<link href="{{ asset('css/cv.css') }}" type="text/css" rel="stylesheet">
 
  <div class="panel">
     <div class="panel-default"></div>
@@ -29,6 +30,45 @@
     <div class="underline"></div>
     <a href="{{ path('home')}}" onClick="ul(0)" >Accueil</a><a href="{{ path('about')}}" onClick="ul(1)">A Propos</a><a href="{{ path('skills')}}" onClick="ul(2)">Compétences</a><a href="{{ path('projects')}}" onClick="ul(3)">Projets</a><a href="{{ path('cv')}}" onClick="ul(4)">CV</a><a href="{{ path('contact')}}" onClick="ul(5)">Contact</a>
   </nav>    
+
+
+
+
+        <div class="iframe-CV">
+
+          <iframe src="media/CV.pdf" width="100%" height="750px"> </iframe>
+
+          <footer><a class="footer-cv"  href="https://cvalexiscaille.000webhostapp.com/"><img src="https://img.icons8.com/ios/30/000000/cursor--v1.png"/> Mon CV en ligne </a></footer>
+          
+
+        </div>
+
+       
+
+       
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="{{ asset('js/script_base_menu.js') }}"></script>
 
 {% endblock %}

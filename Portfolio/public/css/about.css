@@ -4,6 +4,11 @@ Hover #dd925f
 Couleur violette : #ae94c0
 couleur gris clair : #302F2F
 couleur gris foncé: #1d1f20
+couleur bleu code :#7cdcf0
+couleur orange code : #b85b2c
+couleur orange foncé code :#9c3a20
+coleur verte code : #93c8a3
+couleur blkeu foncé html : #3890d6
 */
 h1{
     
@@ -23,6 +28,21 @@ p{
     margin-left:20px;
     margin-top: 25px;
 
+}
+span{
+  font-size: 1.5em;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    margin-left:20px;
+    margin-top: 25px;
+
+}
+span.bleu_clair{
+  color: #7cdcf0;
+}
+
+span.rouge_mat{
+  color:  #9c3a20
 }
 .content-left{
     position:relative;

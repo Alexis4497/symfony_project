@@ -23,12 +23,43 @@
     <div class="panel-default"></div>
    
   </div>
+
+
+
   <nav class="black">
+
     <div class="underline"></div>
     <div class="underline"></div>
     <div class="underline"></div>
-    <a href="{{ path('home')}}" onClick="ul(0)" >Accueil</a><a href="{{ path('about')}}" onClick="ul(1)">A Propos</a><a href="{{ path('skills')}}" onClick="ul(2)">Compétences</a><a href="{{ path('projects')}}" onClick="ul(3)">Projets</a><a href="{{ path('cv')}}" onClick="ul(4)">CV</a><a href="{{ path('contact')}}" onClick="ul(5)">Contact</a>
+
+      <ul>
+
+        <li><a href="{{ path('home')}}">Accueil</a></li>
+        
+        <li><a href="{{ path('about')}}">A Propos</a></li>
+
+        <li><a href="{{ path('skills')}}">Compétences</a></li>
+
+        <li class="deroulant"><a href="{{ path('projects')}}">Projets</a>
+          <ul class="sous"> 
+
+            <li><a href="#">Projets Stages<a/></li> <!--mettre les liens vers les pages -->
+            <li><a href="#">Projets Cours<a/></li>  <!--mettre les liens vers les pages -->
+            <li><a href="#">Projets persos</a></li> <!--mettre les liens vers les pages -->
+          </ul>
+        </li>
+
+        <li><a href="{{ path('cv')}}">CV</a></li>
+
+        <li><a href="{{ path('contact')}}">Contact</a></li>
+        
+      </ul>
   </nav>    
+
+
+
+
+
 <script src="{{ asset('js/script_base_menu.js') }}"></script>
 
 {% endblock %}
